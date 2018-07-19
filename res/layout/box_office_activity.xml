@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+		android:layout_above="@+id/rg_boxOffice"
+        ></android.support.v4.view.ViewPager>
+    
+    
+
+    <RadioGroup
+        android:id="@+id/rg_boxOffice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+       >
+
+        <RadioButton
+            android:id="@+id/rd_real_time"
+            android:layout_height="41dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+			android:button="@null"            
+            android:checked="true"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="#fff900"
+            android:text="票房信息" />
+
+        <RadioButton
+            android:id="@+id/rd_week_over"
+              android:layout_width="0dp"
+            android:layout_weight="1"
+			android:button="@null"    
+            android:layout_height="41dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+             android:textSize="15sp"
+            android:background="#ff8000"
+            android:text="附近影院" />
+
+        <RadioButton
+            android:id="@+id/rd_week"
+              android:layout_width="0dp"
+            android:layout_weight="1"
+			android:button="@null"    
+            android:layout_height="41dp"
+            android:gravity="center"
+             android:textSize="15sp"
+            android:background="#ff1000"
+            android:text="最新影讯" />
+        <RadioButton
+            android:id="@+id/rd_personal"
+            android:layout_marginLeft="5dp"
+              android:layout_width="0dp"
+            android:layout_weight="1"
+			android:button="@null"    
+            android:layout_height="41dp"
+            android:gravity="center"
+             android:textSize="15sp"
+            android:background="#ff1000"
+            android:text="个人中心" />
+    </RadioGroup>
+
+</RelativeLayout>

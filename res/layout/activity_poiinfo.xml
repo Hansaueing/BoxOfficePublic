@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView 
+            android:id="@+id/tv_cinema_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cineam_name"
+            android:singleLine="true"
+            />
+        <TextView 
+            android:id="@+id/tv_cinema_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cinema_name"
+            android:text="cinema_address11111111111111111111111111"
+            android:layout_marginRight="36dp"
+            />
+        <TextView 
+            android:id="@+id/tv_cinema_tel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_cinema_address"
+			android:text="13611112222"
+			android:singleLine="true"
+            />
+        <TextView 
+            android:id="@+id/tv_distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cinema_tel"
+            android:text="288米"
+            
+            />
+        <ImageView 
+            android:id="@+id/iv_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_geo"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

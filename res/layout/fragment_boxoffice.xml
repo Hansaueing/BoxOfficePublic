@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/rg_boxoffice_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rb_realtime_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:button="@null"
+            android:checked="true"
+            android:text="实时票房" />
+
+        <RadioButton
+            android:id="@+id/rb_weekend_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:button="@null"
+            android:text="周末票房" />
+
+        <RadioButton
+            android:id="@+id/rb_overweek_box"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:button="@null"
+            android:text="本周票房" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fl_lv_loadimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rg_boxoffice_fragment1" >
+
+        <ListView
+            android:id="@+id/lv_boxofficeinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+        <RelativeLayout 
+            android:id="@+id/rl_loadimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageView 
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_loadimg"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/icon_progress"
+                />
+            
+            
+        </RelativeLayout>
+        
+        
+    </FrameLayout>
+
+</RelativeLayout>
