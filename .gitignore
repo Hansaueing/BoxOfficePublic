@@ -48,5 +48,5 @@ Temporary Items
 
 .idea
 .settings
-bin
+bin/dexedLibs
 gen
