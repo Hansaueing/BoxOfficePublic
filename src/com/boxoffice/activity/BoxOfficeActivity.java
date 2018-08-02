@@ -33,7 +33,7 @@ public class BoxOfficeActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.box_office_activity);
 		//��ʼ������
-		init();
+		initView();
 		//adapter
 		setAdapter();
 		//������ť����
@@ -117,7 +117,7 @@ public class BoxOfficeActivity extends FragmentActivity {
 	/*
 	 * ��ʼ������
 	 */
-	private void init() {
+	private void initView() {
 		cinemaNearbyFragment=new CinemaNearbyFragment();
 //		showRecentlyFragment=new ShowRecentlyFragment();
 		boxOfficeInfoFragment=new BoxOfficeInfoFragment();
